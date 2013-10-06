@@ -31,8 +31,8 @@
                 $('#' + defaults.classId)
                     .css({						
                         "position": "absolute",
-                        "top": +e.clientY + (10) + "px",
-                        "left": +e.clientX - ($('#' + defaults.classId).width()/2) + "px",
+                        "top": +e.pageY + (10) + "px",
+                        "left": +e.pageX - ($('#' + defaults.classId).width()/2) + "px",
                         "padding": defaults.padxy,
                         "background": defaults.bgcolor,
                         "border-radius": defaults.borderRadius,
