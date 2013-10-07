@@ -20,7 +20,7 @@
 		var $wrapper = "<div id='" + defaults.classId + "'></div>";
         var xtitle;
 		var o=options;
-        $(this).on('mouseover',
+        $(this).on('mouseover,mousemove',
             function (e) {
                 xtitle = $(this).attr(defaults.setAttr);
                 //console.log($('#mypop').length);
