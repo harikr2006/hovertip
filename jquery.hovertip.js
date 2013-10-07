@@ -15,7 +15,12 @@
 			Border:"1px solid #ccc",
 			boxShadow:"0px 0px 3px #000",
 			topSpace:20
-        },options);		
+        },options);	
+		
+		var config = {
+			zIndex:'9999',
+			wordWrap:"break-word"
+			}	
 		return this.each(
 			function(){
 		var $wrapper = "<div id='" + defaults.classId + "'></div>";
@@ -48,7 +53,9 @@
 						"font-size":defaults.fontSize+"px",
 						"font-family":defaults.fontFamily,
 						"box-shadow":defaults.boxShadow,
-						"border":defaults.Border
+						"border":defaults.Border,
+						"z-index":config.zIndex,
+						"word-wrap":config.wordWrap
                     }).fadeTo(defaults.speed, 1);					
 				$(this).css({"cursor":"pointer"});
                 $(this).removeAttr(defaults.setAttr);
