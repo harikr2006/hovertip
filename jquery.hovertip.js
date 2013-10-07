@@ -13,14 +13,21 @@
 			fontSize:12,
 			fontFamily:"Halvetica",
 			Border:"1px solid #ccc",
-			boxShadow:"0px 0px 3px #000"
+			boxShadow:"0px 0px 3px #000",
+			topSpace:20
         },options);		
 		return this.each(
 			function(){
 		var $wrapper = "<div id='" + defaults.classId + "'></div>";
         var xtitle;
 		var o=options;
-        $(this).on('mouseover,mousemove',
+		
+		$(this).on('mousemove',function(e){ $('#' + defaults.classId)
+                    .css({"top": +e.pageY + (defaults.topSpace) + "px",
+                        "left": +e.pageX - ($('#' + defaults.classId).width()/2) + "px"})})
+		
+		
+        $(this).on('mouseover',
             function (e) {
                 xtitle = $(this).attr(defaults.setAttr);
                 //console.log($('#mypop').length);
