@@ -6,7 +6,7 @@
             classId: 'xhover',
             speed: 300,
             padxy: 5,
-            bgcolor: "rgba(0,0,0,0.8)",
+            bgcolor: "#000",
             borderRadius: 3,
             textColor: "#fff",
 			maxWidth:100,
