@@ -1,0 +1,96 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script type="text/javascript" src="jquery-1.9.1.min.js"></script>
+<script type="text/javascript" src="jquery.hovertip.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+	var myOptions = {setAttr:"tooltip",textColor:"#fff",speed:300,fontSize:"12px",fontFamily:"tahoma",Border:'1px solid #333'};
+	$('.sampleLink').hovertip(myOptions);	
+	$('.hovertip img').hovertip({setAttr:"alt"});
+	$('.abtn').click(function(){add()});
+	})
+	var i=0;
+function add(){i++;
+	$('#sampleLink').append('<i title="hover tip dynamically created '+i+'" class="sampleLink"> I have Hover tip</i>');
+	$('.sampleLink').hovertip();}
+</script>
+<title>Hover Tip</title>
+<style>
+body{
+	background:#EFEFEF;
+}
+div.hbox{
+	width:98%;
+	min-height:100px;
+	padding:1%;
+	
+}
+.hovertip img{
+	width:100%;
+	height:100px;
+}
+
+.sampleLink{
+	width:auto;
+	height:30px;
+	background:#F90;
+	color:#000;
+	border:2px solid #333;
+	padding:5px;
+	margin:0.2%;
+}
+.hovertip{
+	width:100px;
+	height:100px;
+	margin:10px;
+	float:left;
+	background:#CCC;
+	border:2px solid #000;	
+}
+</style>
+</head>
+
+<body>
+<div class="hbox">
+<button class="abtn" >Click me</Button><br />
+<br />
+
+<div id="sampleLink">
+<i tooltip="i am a pop over" class="sampleLink"> i am a pop over</i>
+</div>
+
+</div>
+<div class="hovertip" popover="My div">
+<img id="search-thumbnail-20234215" class="tooltip" width="110" height="97" data-fileid="20234215" alt="Multicoler dandelion seed" src="http://i.istockimg.com/file_thumbview_approve/20234215/1/stock-photo-20234215-multicoler-dandelion-seed.jpg">
+</div>
+<div class="hovertip" popover="My div">
+<img id="search-thumbnail-19562130" class="tooltip" width="110" height="110" data-fileid="19562130" alt="Tulips bouquet" src="http://i.istockimg.com/file_thumbview_approve/19562130/1/stock-photo-19562130-tulips-bouquet.jpg">
+</div>
+<div class="hovertip" popover="My div">
+<img id="search-thumbnail-16110409" class="tooltip" width="105" height="110" data-fileid="16110409" alt="Gerbera Daisy" src="http://i.istockimg.com/file_thumbview_approve/16110409/1/stock-photo-16110409-gerbera-daisy.jpg">
+</div>
+<div class="hovertip" popover="My div">
+<img id="search-thumbnail-18089551" class="tooltip" width="110" height="73" data-fileid="18089551" alt="Thistle" src="http://i.istockimg.com/file_thumbview_approve/18089551/1/stock-photo-18089551-thistle.jpg">
+</div>
+<div class="hovertip" popover="My div">
+<img id="search-thumbnail-19026720" class="tooltip" width="107" height="110" data-fileid="19026720" alt="Chrysanthemum" src="http://i.istockimg.com/file_thumbview_approve/19026720/1/stock-photo-19026720-chrysanthemum.jpg">
+</div>
+<div class="hovertip" popover="My div">
+<img id="search-thumbnail-2180209" class="tooltip" width="110" height="73" data-fileid="2180209" alt="Gerbera closeup" src="http://i.istockimg.com/file_thumbview_approve/2180209/1/stock-photo-2180209-gerbera-closeup.jpg">
+</div>
+<div class="hovertip" popover="My div">
+<img id="search-thumbnail-18537395" class="tooltip" width="110" height="73" data-fileid="18537395" alt="Bouquet flowers" src="http://i.istockimg.com/file_thumbview_approve/18537395/1/stock-photo-18537395-bouquet-flowers.jpg">
+</div>
+<div class="hovertip" popover="My div">
+<img id="search-thumbnail-19529004" class="tooltip" width="110" height="84" data-fileid="19529004" alt="Beautiful Woman Hiding Behind Flowers" src="http://i.istockimg.com/file_thumbview_approve/19529004/1/stock-photo-19529004-beautiful-woman-hiding-behind-flowers.jpg">
+</div>
+<div class="hovertip" popover="My div">
+<img id="search-thumbnail-18474671" class="tooltip" width="110" height="88" data-fileid="18474671" alt="Funeral flower arrangement. Studio shot." src="http://i.istockimg.com/file_thumbview_approve/18474671/1/stock-photo-18474671-funeral-flower-arrangement-studio-shot.jpg">
+</div><div class="hovertip" popover="My div">
+<img id="search-thumbnail-18186740" class="tooltip" width="106" height="110" data-fileid="18186740" alt="Cosmos flower." src="http://i.istockimg.com/file_thumbview_approve/18186740/1/stock-photo-18186740-cosmos-flower.jpg">
+</div>
+
+</body>
+</html>
