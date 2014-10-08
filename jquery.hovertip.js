@@ -42,7 +42,7 @@
                 $('#' + defaults.classId).append(xtitle);
                 $('#' + defaults.classId)
                     .css({						
-                        "position": "absolute",
+                        "position": "fixed",
                         "top": +e.pageY + (10) + "px",
                         "left": +e.pageX - ($('#' + defaults.classId).width()/2) + "px",
                         "padding": defaults.padxy,
